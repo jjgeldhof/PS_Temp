@@ -2,9 +2,9 @@ from Model.data import Data
 from Model.analysis import Process
 
 print("initializing analysis class")
-data = Data()
+dat = Data()
 proc = Process()
 
-data.read_data()
+dat.read_data()
 
-proc.powerspectrum(data)
+proc.powerspectrum(dat)
