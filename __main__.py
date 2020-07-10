@@ -1,10 +1,14 @@
 from Model.data import Data
 from Model.analysis import Process
+import numpy as np
 
 print("initializing analysis class")
 dat = Data()
-proc = Process()
+self = Process()
 
 dat.read_data()
 
-proc.powerspectrum(dat)
+self.powerspectrum(dat)
+
+self.bin_spectrum(900)
+self.fit()
